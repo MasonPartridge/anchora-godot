@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://6qu2bdjmhipe"]
+
+[ext_resource type="Texture2D" uid="uid://xf7cg7varpil" path="res://assets/sprites/waypoint.png" id="1_sllxn"]
+
+[node name="Waypoint" type="Sprite2D"]
+position = Vector2(117, 482)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_sllxn")
