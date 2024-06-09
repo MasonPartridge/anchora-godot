@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1717910478
+icon.svg::CompressedTexture2D::3596349724030812641::1717099293::1717099298::1::::<><>::
+README.md::TextFile::-1::1717099353::0::1::::<><>::
+::res://anchora-godot/::1717164835
+::res://assets/::1717102100
+::res://assets/scripts/::1717389859
+game.gd::GDScript::-1::1717303691::0::1::::<>Node2D<>::
+Movement.gd::GDScript::-1::1717389859::0::1::::<>Sprite2D<>::
+::res://assets/sprites/::1717280853
+ASV-ROSE-EX-C.png::CompressedTexture2D::7457611567065471757::1717101892::1717101894::1::::<><>::
+waypoint.png::CompressedTexture2D::1626612173330052223::1717280853::1717280853::1::::<><>::
+::res://game-objects/::1717281310
+waypoint.tscn::PackedScene::2210146810717724922::1717281310::0::1::::<><>::uid://xf7cg7varpil::::res://assets/sprites/waypoint.png
+::res://scenes/::1717389861
+game.tscn::PackedScene::3581604796319554670::1717389861::0::1::::<><>::res://assets/scripts/game.gd<>uid://deir1jrub32wf::::res://assets/sprites/ASV-ROSE-EX-C.png<>res://assets/scripts/Movement.gd<>uid://6qu2bdjmhipe::::res://game-objects/waypoint.tscn
