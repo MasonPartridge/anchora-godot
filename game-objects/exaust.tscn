@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn6ot2nqvyn08"]
+
+[ext_resource type="Texture2D" uid="uid://c7o6ig5kkphtk" path="res://assets/sprites/flame.png" id="1_4o2ft"]
+
+[node name="Exaust" type="Sprite2D"]
+position = Vector2(10.3391, 44.4701)
+texture = ExtResource("1_4o2ft")

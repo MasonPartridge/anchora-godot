@@ -27,7 +27,6 @@ func spawn_waypoint(spawn_global_position, is_shift):
 		new_waypoint.emit(spawn_global_position)
 
 func _on_ship_reached_waypoint():
-	print(get_children(), get_child_count())
 	if get_child_count() >= 1:
 		get_child(0).queue_free();
 	if get_child_count() >= 2:

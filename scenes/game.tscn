@@ -1,29 +1,47 @@
-[gd_scene load_steps=5 format=3 uid="uid://bra7ri6jwx3lq"]
+[gd_scene load_steps=7 format=3 uid="uid://bra7ri6jwx3lq"]
 
 [ext_resource type="Script" path="res://assets/scripts/game.gd" id="1_ge0xe"]
 [ext_resource type="Texture2D" uid="uid://bv3c2k5tgqmvs" path="res://assets/sprites/ASV-ROSE-EX-C-2.png" id="2_7bmm2"]
 [ext_resource type="Script" path="res://assets/scripts/Movement.gd" id="2_q233s"]
+[ext_resource type="Texture2D" uid="uid://bjs3db14hunkj" path="res://assets/sprites/Background.png" id="2_rh1pi"]
+[ext_resource type="PackedScene" uid="uid://bn6ot2nqvyn08" path="res://game-objects/exaust.tscn" id="3_gv1kw"]
 [ext_resource type="Script" path="res://scenes/Waypoints.gd" id="5_mlncj"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ge0xe")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-617, -121)
+scale = Vector2(1.83768, 1.46166)
+texture = ExtResource("2_rh1pi")
+
 [node name="Ship" type="Sprite2D" parent="."]
-position = Vector2(621, 293)
+position = Vector2(562.5, 358.813)
+scale = Vector2(0.542969, 0.542969)
 texture = ExtResource("2_7bmm2")
 script = ExtResource("2_q233s")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 218.0
-offset_top = 125.0
-offset_right = 563.0
-offset_bottom = 245.0
-text = "Thrustry wusty in my bussy"
+[node name="ForwardsThrust" type="Node2D" parent="Ship"]
+visible = false
+position = Vector2(2, 91)
+scale = Vector2(1.83768, 1.46166)
+
+[node name="Exaust" parent="Ship/ForwardsThrust" instance=ExtResource("3_gv1kw")]
+position = Vector2(10.3391, 44.4701)
+
+[node name="Exaust3" parent="Ship/ForwardsThrust" instance=ExtResource("3_gv1kw")]
+position = Vector2(-11.4274, 45.1542)
+
+[node name="Exaust2" parent="Ship/ForwardsThrust" instance=ExtResource("3_gv1kw")]
+position = Vector2(-33.7382, 38.9968)
+scale = Vector2(0.603682, 1.01554)
+
+[node name="Exaust4" parent="Ship/ForwardsThrust" instance=ExtResource("3_gv1kw")]
+position = Vector2(31.0174, 37.6285)
+scale = Vector2(0.603682, 1.01554)
 
 [node name="Waypoints" type="Node2D" parent="."]
 script = ExtResource("5_mlncj")
 
 [connection signal="reached_waypoint" from="Ship" to="Waypoints" method="_on_ship_reached_waypoint"]
-[connection signal="button_down" from="Button" to="Ship" method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="Ship" method="_on_button_button_up"]
 [connection signal="new_waypoint" from="Waypoints" to="Ship" method="_on_waypoints_new_waypoint"]

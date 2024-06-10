@@ -1,4 +1,3 @@
 res://scenes/game.tscn
 res://assets/scripts/Movement.gd
-res://assets/scripts/game.gd
 res://scenes/Waypoints.gd
