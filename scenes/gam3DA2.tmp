@@ -15,9 +15,6 @@ position = Vector2(-617, -121)
 scale = Vector2(1.83768, 1.46166)
 texture = ExtResource("2_rh1pi")
 
-[node name="Waypoints" type="Node2D" parent="."]
-script = ExtResource("5_mlncj")
-
 [node name="Ship" type="Sprite2D" parent="."]
 position = Vector2(562.5, 358.813)
 scale = Vector2(0.542969, 0.542969)
@@ -42,5 +39,8 @@ scale = Vector2(0.603682, 1.01554)
 position = Vector2(31.0174, 37.6285)
 scale = Vector2(0.603682, 1.01554)
 
-[connection signal="new_waypoint" from="Waypoints" to="Ship" method="_on_waypoints_new_waypoint"]
+[node name="Waypoints" type="Node2D" parent="."]
+script = ExtResource("5_mlncj")
+
 [connection signal="reached_waypoint" from="Ship" to="Waypoints" method="_on_ship_reached_waypoint"]
+[connection signal="new_waypoint" from="Waypoints" to="Ship" method="_on_waypoints_new_waypoint"]
