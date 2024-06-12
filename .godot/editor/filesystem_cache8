@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717985825
+::res://::1718158895
 icon.svg::CompressedTexture2D::3596349724030812641::1717981321::1717981321::1::::<><>::
 README.md::TextFile::-1::1717099353::0::1::::<><>::
 ::res://anchora-godot/::1717164835
 ::res://assets/::1717982206
-::res://assets/scripts/::1717983717
+::res://assets/scripts/::1717998691
 game.gd::GDScript::-1::1717981321::0::1::::<>Node2D<>::
-Movement.gd::GDScript::-1::1717983717::0::1::::<>Sprite2D<>::
+Movement.gd::GDScript::-1::1717998691::0::1::::<>Sprite2D<>::
 ::res://assets/sprites/::1717982849
 ASV-ROSE-EX-C-2.png::CompressedTexture2D::3918359200075988428::1717981321::1717981321::1::::<><>::
 ASV-ROSE-EX-C.png::CompressedTexture2D::7457611567065471757::1717981321::1717981321::1::::<><>::
@@ -16,6 +16,6 @@ waypoint.png::CompressedTexture2D::1626612173330052223::1717981321::1717981321::
 ::res://game-objects/::1717982937
 exaust.tscn::PackedScene::3363756768315198967::1717982937::0::1::::<><>::uid://c7o6ig5kkphtk::::res://assets/sprites/flame.png
 waypoint.tscn::PackedScene::2210146810717724922::1717981321::0::1::::<><>::uid://xf7cg7varpil::::res://assets/sprites/waypoint.png
-::res://scenes/::1717983759
-game.tscn::PackedScene::3581604796319554670::1717983759::0::1::::<><>::res://assets/scripts/game.gd<>uid://bv3c2k5tgqmvs::::res://assets/sprites/ASV-ROSE-EX-C-2.png<>res://assets/scripts/Movement.gd<>uid://bjs3db14hunkj::::res://assets/sprites/Background.png<>uid://bn6ot2nqvyn08::::res://game-objects/exaust.tscn<>res://scenes/Waypoints.gd
+::res://scenes/::1717998746
+game.tscn::PackedScene::3581604796319554670::1717998746::0::1::::<><>::res://assets/scripts/game.gd<>uid://bv3c2k5tgqmvs::::res://assets/sprites/ASV-ROSE-EX-C-2.png<>res://assets/scripts/Movement.gd<>uid://bjs3db14hunkj::::res://assets/sprites/Background.png<>uid://bn6ot2nqvyn08::::res://game-objects/exaust.tscn<>res://scenes/Waypoints.gd
 Waypoints.gd::GDScript::-1::1717983645::0::1::::<>Node2D<>::
